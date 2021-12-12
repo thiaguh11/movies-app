@@ -23,16 +23,24 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  dio: any
+  mobx: any
+  flutter_mobx: any
   flutter_modular: any
+  equatable: any
+  dartz: any
   flutter:
     sdk: flutter
-
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
+  modular_test: any
+  mobx_codegen: any
+  build_runner: any
+  mocktail: any
   flutter_test:
     sdk: flutter
 
