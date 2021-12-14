@@ -25,4 +25,18 @@ class Result extends Equatable {
 
   @override
   bool? get stringify => true;
+
+  Result copyWith({
+    int? page,
+    List<Movie>? results,
+    int? totalResults,
+    int? totalPages,
+  }) {
+    return Result(
+      page: page ?? this.page,
+      results: results ?? this.results,
+      totalResults: totalResults ?? this.totalResults,
+      totalPages: totalPages ?? this.totalPages,
+    );
+  }
 }

@@ -55,4 +55,38 @@ class Movie extends Equatable {
 
   @override
   bool? get stringify => true;
+
+  Movie copyWith({
+    String? posterPath,
+    bool? adult,
+    String? overview,
+    String? releaseDate,
+    List<int>? genreIds,
+    int? id,
+    String? originalTitle,
+    String? originalLanguage,
+    String? title,
+    String? backdropPath,
+    double? popularity,
+    int? voteCount,
+    bool? video,
+    double? voteAverage,
+  }) {
+    return Movie(
+      posterPath: posterPath ?? this.posterPath,
+      adult: adult ?? this.adult,
+      overview: overview ?? this.overview,
+      releaseDate: releaseDate ?? this.releaseDate,
+      genreIds: genreIds ?? this.genreIds,
+      id: id ?? this.id,
+      originalTitle: originalTitle ?? this.originalTitle,
+      originalLanguage: originalLanguage ?? this.originalLanguage,
+      title: title ?? this.title,
+      backdropPath: backdropPath ?? this.backdropPath,
+      popularity: popularity ?? this.popularity,
+      voteCount: voteCount ?? this.voteCount,
+      video: video ?? this.video,
+      voteAverage: voteAverage ?? this.voteAverage,
+    );
+  }
 }
