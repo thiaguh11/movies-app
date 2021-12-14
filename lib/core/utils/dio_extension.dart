@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:movies/core/resources/api_consts.dart';
+import 'package:movies/core/resources/strings/api_consts.dart';
 
 extension DioExtension on Dio {
   Dio initializeDio() {
