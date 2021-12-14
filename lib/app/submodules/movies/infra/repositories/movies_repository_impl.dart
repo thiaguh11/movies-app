@@ -16,7 +16,11 @@ class MoviesRepositoryImpl implements IMoviesRepository {
     String? region,
   }) async {
     try {
-      return await remoteDataSource.getPopularMovies();
+      return await remoteDataSource.getPopularMovies(
+        language: language,
+        page: page,
+        region: region,
+      );
     } on Exception catch (e) {
       return Left(e);
     }

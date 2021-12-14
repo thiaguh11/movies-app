@@ -4,11 +4,11 @@ import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
+import 'package:movies/app/core/resources/response_examples/movies_responses.dart';
+import 'package:movies/app/core/resources/strings/api_consts.dart';
 import 'package:movies/app/submodules/movies/domain/entities/result.dart';
 import 'package:movies/app/submodules/movies/external/datasources/movies_remote_data_source_impl.dart';
 import 'package:movies/app/submodules/movies/infra/datasources/movies_remote_data_source.dart';
-import 'package:movies/core/resources/response_examples/movies_responses.dart';
-import 'package:movies/core/resources/strings/api_consts.dart';
 
 class DioMock extends Mock implements Dio {}
 
